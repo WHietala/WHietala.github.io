@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Verkkosivuni </title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="tyyli.css"> 
+  </head>
+  <body>
+  
+	
+		<ul class="nav nav-pills nav-justified" id="navi">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Etusivu</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="henkilökuva.html">Henkilökuva</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="otayhteyttä.html">Ota Yhteyttä</a>
+			</li>
+		</ul>
+		
+	<div class="container-fluid">
+		<div class="row" id="otsikko">
+			<div class="col-sm-6">
+				<img src="willem.jpg" class="image-left" alt="willem" width="300">
+			</div>
+			<div class="col-sm-6 my-auto">
+				<h1>Willem Hietala</h1>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid text-center" id="etusivu"> 
+		<h1> Ota yhteyttä </h1>
+	</div>
+	<div>
+		<form id="asia">
+		<fieldset>
+			<legend> Yhteydenottolomake</legend>
+				<label for="fname">Nimi:</label><br>
+				<input type="text" id="fname" name="fname" value="Matti Meikäläinen" required><br>
+				<label for="email">Sähköposti:</label> <br>
+				<input type="text" id="email" name="email" value="sähköpostiosoite" required><br>
+				<label for="comment">Avoin kommenttikenttä:</label> <br>
+				<textarea rows="4" cols="50" id="comment" name="comment" form="asia">Vapaa sana...</textarea><br>
+				<label for="Yhteydenotonsyy">Yhteydenoton syy:</label><br>
+				<select id="Yhteydenotonsyy">
+				<option value="Työtarjous">Työtarjous</option>
+				<option value="Kommentti verkkosivuista">Kommentti verkkosivuista</option>
+				<option value="Muu syy">Muu syy</option>
+ 
+				</select><br>
+				<input type="submit" value="Lähetä yhteydenotto">
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
